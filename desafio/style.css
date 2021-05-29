@@ -1,0 +1,18 @@
+@import url(./midia/fav-cons/fontawesome-free-5.15.2-web/css/all.css);
+:root {
+  font-size: 62.25%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+}

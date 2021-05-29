@@ -1,0 +1,177 @@
+header {
+	display: flex;
+	flex-direction: column;
+
+	.navContainer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		width: 100%;
+		padding: 0rem 2rem 0rem 2rem;
+
+		h1 img {
+			width: 70%;
+		}
+
+		span {
+			font-size: 3rem;
+		}
+	}
+
+	nav {
+		& > div {
+			display: flex;
+			flex-direction: column;
+
+			ul {
+				display: flex;
+				flex-direction: column;
+
+				& > li {
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-end;
+					&:hover ul,
+					&:focus ul {
+						display: flex;
+					}
+
+					ul {
+						display: none;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						position: absolute;
+						z-index: 999;
+
+						top: 54px;
+						width: 10rem;
+						gap: 3rem;
+						padding: 2rem;
+
+						font-size: 1.5rem;
+
+						background-color: white;
+
+						li {
+							white-space: nowrap;
+
+							a:nth-child(1) {
+								color: rgb(45, 106, 163);
+							}
+
+							a {
+								color: black;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		& > ul {
+			display: none;
+			justify-content: flex-end;
+			padding: 2rem 0rem 2rem 0rem;
+
+			gap: 5%;
+
+			li:nth-child(1) a {
+				color: rgb(45, 106, 163);
+			}
+
+			li {
+				border-left: 1px solid rgba(0, 0, 0, 0.3);
+				padding: 1rem 0 1rem 5%;
+
+				a {
+					white-space: nowrap;
+					color: black;
+					font-size: 1.5rem;
+				}
+
+				span {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+
+	& > ul {
+		white-space: nowrap;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 100%;
+		padding: 1rem;
+		gap: 1rem;
+
+		font-size: 1.3rem;
+		color: white;
+		background-color: rgb(45, 106, 163);
+	}
+}
+
+@media (min-width: 650px) {
+	header {
+		nav {
+			& > ul {
+				display: flex !important;
+			}
+		}
+		#DropDown-menu {
+			display: none !important;
+		}
+	}
+}
+
+@media (min-width: 900px) {
+	header {
+		flex-direction: row !important;
+
+		& > ul {
+			width: 40% !important;
+			max-width: 320px !important;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	header {
+		flex-direction: row !important;
+
+		nav {
+			& > ul {
+				gap: 5% !important;
+
+				li {
+					padding: 1rem 5% 1rem 5% !important;
+				}
+			}
+		}
+
+		& > ul {
+			width: 40% !important;
+			max-width: 400px !important;
+		}
+	}
+}
+
+@media (min-width: 1300px) {
+	header {
+		flex-direction: row !important;
+
+		nav {
+			& > ul {
+				gap: 10% !important;
+
+				li {
+					padding: 1rem 5% 1rem 10% !important;
+				}
+			}
+		}
+	}
+}

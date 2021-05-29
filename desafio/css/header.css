@@ -1,0 +1,211 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+header .navContainer h1 img {
+  width: 70%;
+}
+
+header .navContainer span {
+  font-size: 3rem;
+}
+
+header nav > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header nav > div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header nav > div ul > li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header nav > div ul > li:hover ul,
+header nav > div ul > li:focus ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav > div ul > li ul {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 999;
+  top: 54px;
+  width: 10rem;
+  gap: 3rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+header nav > div ul > li ul li {
+  white-space: nowrap;
+}
+
+header nav > div ul > li ul li a:nth-child(1) {
+  color: #2d6aa3;
+}
+
+header nav > div ul > li ul li a {
+  color: black;
+}
+
+header nav > ul {
+  display: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2rem 0rem 2rem 0rem;
+  gap: 5%;
+}
+
+header nav > ul li:nth-child(1) a {
+  color: #2d6aa3;
+}
+
+header nav > ul li {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 1rem 0 1rem 5%;
+}
+
+header nav > ul li a {
+  white-space: nowrap;
+  color: black;
+  font-size: 1.5rem;
+}
+
+header nav > ul li span {
+  font-size: 1rem;
+}
+
+header > ul {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #2d6aa3;
+}
+
+@media (min-width: 650px) {
+  header nav > ul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  header #DropDown-menu {
+    display: none !important;
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  header > ul {
+    width: 40% !important;
+    max-width: 320px !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  header nav > ul {
+    gap: 5% !important;
+  }
+  header nav > ul li {
+    padding: 1rem 5% 1rem 5% !important;
+  }
+  header > ul {
+    width: 40% !important;
+    max-width: 400px !important;
+  }
+}
+
+@media (min-width: 1300px) {
+  header {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  header nav > ul {
+    gap: 10% !important;
+  }
+  header nav > ul li {
+    padding: 1rem 5% 1rem 10% !important;
+  }
+}

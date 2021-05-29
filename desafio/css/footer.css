@@ -1,0 +1,190 @@
+footer {
+  width: 100%;
+  color: white;
+  background-color: #2d6aa3;
+}
+
+footer > #FooterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  gap: 4rem;
+  margin: auto;
+  padding: 4rem 0 4rem 0;
+}
+
+footer > #FooterContainer h4 {
+  font-size: 1.5rem;
+}
+
+footer > #FooterContainer > div {
+  width: 100%;
+}
+
+footer > #FooterContainer i,
+footer > #FooterContainer p {
+  font-size: 1.3rem;
+}
+
+footer > #FooterContainer .first-footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+}
+
+footer > #FooterContainer .first-footer-container img {
+  cursor: pointer;
+  margin-left: 0;
+}
+
+footer > #FooterContainer .first-footer-container p {
+  max-width: 430px;
+}
+
+footer > #FooterContainer .second-footer-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer > #FooterContainer .second-footer-container > div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+footer > #FooterContainer .second-footer-container > div ul li p {
+  cursor: pointer;
+}
+
+footer > #FooterContainer .second-footer-container img {
+  margin-left: -0.7rem;
+  width: 11.5rem;
+}
+
+footer > #FooterContainer .third-footer-container {
+  margin-bottom: auto;
+}
+
+footer > #FooterContainer .third-footer-container img {
+  margin-left: -0.5rem;
+  width: 7.5rem;
+}
+
+footer > #FooterContainer .third-footer-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer > #FooterContainer .third-footer-container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+footer #Reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2rem 0 2rem;
+  font-size: 1.1rem;
+  background-color: #929397;
+}
+
+footer #Reservation p {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 825px) {
+  footer > div {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  footer > div > div {
+    width: auto !important;
+  }
+  footer > div .first-footer-container img {
+    width: 50%;
+  }
+  footer > div .second-footer-container {
+    width: 100% !important;
+  }
+  footer > div .second-footer-container > div ul li {
+    list-style: circle !important;
+  }
+}
+
+@media (min-width: 900px) {
+  footer > div {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  footer > div > div {
+    width: 33% !important;
+  }
+  footer > div .first-footer-container {
+    width: 25rem !important;
+    text-align: left !important;
+  }
+  footer > div .first-footer-container img {
+    width: 50%;
+  }
+  footer > div .second-footer-container {
+    width: 400px !important;
+  }
+  footer > div .third-footer-container {
+    width: auto !important;
+  }
+}
